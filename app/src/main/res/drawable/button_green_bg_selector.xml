@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="@color/color_green_btn_bg_fill_2" />
+            <stroke android:width="1dp" android:color="@color/color_green_btn_bg_stroke_2" />
+            <corners android:topLeftRadius="3dp" android:topRightRadius="3dp" android:bottomLeftRadius="3dp" android:bottomRightRadius="3dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/color_green_btn_bg_fill_2" />
+            <stroke android:width="1dp" android:color="@color/color_green_btn_bg_stroke_2" />
+            <corners android:topLeftRadius="3dp" android:topRightRadius="3dp" android:bottomLeftRadius="3dp" android:bottomRightRadius="3dp" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/color_green_btn_bg_fill_0" />
+            <stroke android:width="1dp" android:color="@color/color_green_btn_bg_stroke_0" />
+            <corners android:topLeftRadius="3dp" android:topRightRadius="3dp" android:bottomLeftRadius="3dp" android:bottomRightRadius="3dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/color_green_btn_bg_fill_1" />
+            <stroke android:width="1dp" android:color="@color/color_green_btn_bg_stroke_1" />
+            <corners android:topLeftRadius="3dp" android:topRightRadius="3dp" android:bottomLeftRadius="3dp" android:bottomRightRadius="3dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/infoPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/infoPanelWordsInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/tvUnits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/round_frame_main_info_units"
+                        android:gravity="center"
+                        android:textColor="#ff66cd40"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvWords"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/round_frame_main_info_words"
+                        android:gravity="center"
+                        android:textColor="#ff26c9ff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/infoPanelLearnAndTestInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/ic_yixuexi" />
+
+                    <TextView
+                        android:id="@+id/tvLearnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_study_txt_info_learned"
+                        android:textColor="@color/color_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvLearn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff66cd40"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/ic_yiceyan" />
+
+                    <TextView
+                        android:id="@+id/tvTestText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_study_txt_info_tested"
+                        android:textColor="@color/color_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvTest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff26c9ff"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/buttonPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/buttonPanelSub2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        style="@style/ripple"
+                        android:layout_weight="1.0">
+
+                        <Button
+                            android:id="@+id/btnTest"
+                            style="@style/button_main"
+                            android:background="@drawable/round_frame_main_button_test"
+                            android:drawableTop="@drawable/ic_ceyan"
+                            android:text="@string/main_study_btn_test" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        style="@style/ripple"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0">
+
+                        <Button
+                            android:id="@+id/btnLearn"
+                            style="@style/button_main"
+                            android:background="@drawable/round_frame_main_button_learn"
+                            android:drawableTop="@drawable/ic_xuexi"
+                            android:text="@string/main_study_btn_study" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:id="@+id/todayPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_banner"
+                    android:scaleType="fitStart" />
+
+                <TextView
+                    android:textSize="28sp"
+                    android:textColor="@color/color_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="查看测试记录" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

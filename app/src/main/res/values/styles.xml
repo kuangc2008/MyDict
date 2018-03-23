@@ -1,0 +1,88 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+
+    <style name="button_blue">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@drawable/button_blue_txt_color_selector</item>
+        <item name="android:background">@drawable/button_blue_bg_selector</item>
+        <item name="android:padding">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+    <style name="button_green">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@drawable/button_green_txt_color_selector</item>
+        <item name="android:background">@drawable/button_green_bg_selector</item>
+        <item name="android:padding">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36.0dip</item>
+    </style>
+    <style name="button_main">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="gray_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+        <item name="android:src">@drawable/line</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="list_item_detail">
+        <item name="android:textSize">@dimen/list_item_detail_size</item>
+        <item name="android:textColor">@color/color_list_item_detail</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="list_item_subtitle">
+        <item name="android:textSize">@dimen/list_item_subtitle_size</item>
+        <item name="android:textColor">@color/color_list_item_subtitle</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="list_item_title">
+        <item name="android:textSize">@dimen/list_item_title_size</item>
+        <item name="android:textColor">@color/color_list_item_title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="list_sep_title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/color_list_section</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">26.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="ripple">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="mrl_rippleColor">@color/color_ripple</item>
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleAlpha">@dimen/ripple_alpha</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleDelayClick">true</item>
+    </style>
+
+
+    <style name="text">
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="title">
+        <item name="android:textSize">@dimen/title</item>
+        <item name="android:textColor">@color/color_title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>
