@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@id/contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize"
+                android:background="?colorPrimary"
+                android:gravity="center"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@id/contentBar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/footerBar"
+            android:layout_below="@id/navBar"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/questionPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="158.0dip"
+                android:background="#fff5f5f5">
+
+                <RelativeLayout
+                    android:id="@id/noPanel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44.0dip"
+                    android:layout_alignParentTop="true">
+
+                    <ImageView
+                        android:id="@id/imgLine"
+                        style="@style/gray_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_alignParentBottom="true" />
+
+                    <TextView
+                        android:id="@id/tvNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:textColor="@color/color_black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/questionTextPanel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/noPanel"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip">
+
+                    <TextView
+                        android:id="@id/tvQuestion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/color_black"
+                        android:textSize="28.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/pronouncePanel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginRight="10.0dip">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        style="@style/ripple"
+                        android:layout_alignParentRight="true">
+
+                        <Button
+                            android:id="@id/btnVoice"
+                            android:layout_width="30.0dip"
+                            android:layout_height="30.0dip"
+                            android:background="@drawable/ic_langdu_nroaml"
+                            android:visibility="gone" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@id/imgLine2"
+                    style="@style/gray_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true" />
+
+                <ImageView
+                    android:id="@id/imgMove"
+                    android:layout_width="320.0dip"
+                    android:layout_height="126.0dip"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/wrong"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@id/answerPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10.0dip">
+
+                <LinearLayout
+                    android:id="@id/answerSubPanel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        style="@style/ripple"
+                        app:mrl_rippleDelayClick="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="A:     "
+                                android:textSize="15.0dip" />
+
+                            <Button
+                                android:id="@id/btnAnswer1"
+                                android:layout_width="300.0dip"
+                                android:layout_height="44.0dip"
+                                android:background="@drawable/test_answer_btn_bg"
+                                android:textAllCaps="false"
+                                android:textColor="@drawable/test_answer_txt_color" />
+                        </LinearLayout>
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/answerSubPanel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        style="@style/ripple"
+                        app:mrl_rippleDelayClick="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="B:     "
+                                android:textSize="15.0dip" />
+
+                            <Button
+                                android:id="@id/btnAnswer2"
+                                android:layout_width="300.0dip"
+                                android:layout_height="44.0dip"
+                                android:background="@drawable/test_answer_btn_bg"
+                                android:textAllCaps="false"
+                                android:textColor="@drawable/test_answer_txt_color" />
+                        </LinearLayout>
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/answerSubPanel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        style="@style/ripple"
+                        app:mrl_rippleDelayClick="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="C:     "
+                                android:textSize="15.0dip" />
+
+                            <Button
+                                android:id="@id/btnAnswer3"
+                                android:layout_width="300.0dip"
+                                android:layout_height="44.0dip"
+                                android:background="@drawable/test_answer_btn_bg"
+                                android:textAllCaps="false"
+                                android:textColor="@drawable/test_answer_txt_color" />
+                        </LinearLayout>
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/answerSubPanel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        style="@style/ripple"
+                        app:mrl_rippleDelayClick="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="D:     "
+                                android:textSize="15.0dip" />
+
+                            <Button
+                                android:id="@id/btnAnswer4"
+                                android:layout_width="300.0dip"
+                                android:layout_height="44.0dip"
+                                android:background="@drawable/test_answer_btn_bg"
+                                android:textAllCaps="false"
+                                android:textColor="@drawable/test_answer_txt_color" />
+                        </LinearLayout>
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="请选择正确的释义"
+                    android:textSize="16.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

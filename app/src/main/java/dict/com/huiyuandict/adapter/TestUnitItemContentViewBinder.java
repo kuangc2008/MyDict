@@ -17,6 +17,7 @@ import java.util.Locale;
 
 import dict.com.huiyuandict.App;
 import dict.com.huiyuandict.R;
+import dict.com.huiyuandict.activity.TestActivity;
 import dict.com.huiyuandict.db.Cet;
 import rx.schedulers.Schedulers;
 import tellh.com.stickyheaderview_rv.adapter.StickyHeaderViewAdapter;
@@ -73,7 +74,7 @@ public class TestUnitItemContentViewBinder extends ViewBinder<UnitItemContent, T
     static /* synthetic */ void lambda$bindView$0(TestUnitItemContentViewBinder this_, int i, View v) {
         Intent intent = new Intent();
         if ("test".equals(this_.type)) {
-//            intent.setClass(v.getContext(), TestActivity.class);
+            intent.setClass(v.getContext(), TestActivity.class);
             intent.putExtra("unit", i + "");
             v.getContext().startActivity(intent);
             return;

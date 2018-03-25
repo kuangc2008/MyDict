@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_translucent">
+
+        <RelativeLayout
+            android:id="@id/adRectLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="280.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30.0dip"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@id/grayPanel"
+            android:layout_width="250.0dip"
+            android:layout_height="175.0dip"
+            android:layout_below="@id/adRectLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@id/btnReturn"
+                    android:layout_width="42.0dip"
+                    android:layout_height="42.0dip"
+                    android:background="@drawable/quiz_pause_btn_return_1" />
+
+                <LinearLayout
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@id/btnToMenu"
+                        android:layout_width="42.0dip"
+                        android:layout_height="42.0dip"
+                        android:background="@drawable/quiz_pause_btn_tomenu_1" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@id/btnRetry"
+                    android:layout_width="42.0dip"
+                    android:layout_height="42.0dip"
+                    android:background="@drawable/quiz_pause_btn_retry_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <Button
+                    android:id="@id/btnCloseInfo"
+                    android:layout_width="42.0dip"
+                    android:layout_height="42.0dip"
+                    android:background="@drawable/quiz_pause_btn_close_1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
