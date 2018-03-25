@@ -16,6 +16,7 @@ import com.squareup.sqlbrite.SqlBrite.Builder;
 import net.nashlegend.anypref.AnyPref;
 
 import dict.com.huiyuandict.R;
+import dict.com.huiyuandict.activity.StudyUnitActivity;
 import dict.com.huiyuandict.data.Book;
 import dict.com.huiyuandict.data.Conf;
 import dict.com.huiyuandict.db.Cet;
@@ -111,7 +112,7 @@ public class StudyFragment extends BaseFragment implements OnClickListener {
             startActivity(intent);
         } else if (view.getId() == R.id.btnLearn) {
             intent = new Intent();
-//            intent.setClass(this.mContext, StudyUnitActivity.class);
+            intent.setClass(this.mContext, StudyUnitActivity.class);
             startActivity(intent);
         } else if (view.getId() == R.id.todayPanel) {
             intent = new Intent();
