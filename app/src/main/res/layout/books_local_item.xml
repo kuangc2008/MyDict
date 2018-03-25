@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ripple"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/topLayout" android:background="@color/color_list_item_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/selectPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:id="@id/tvCurBook" android:text="@string/books_txt_selected" style="@style/list_item_detail" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/textPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/selectPanel" android:layout_toRightOf="@id/buttonPanel" android:layout_centerHorizontal="true">
+                <TextView android:id="@id/tvTitle" style="@style/list_item_title" />
+                <TextView android:id="@id/tvSubTitle" style="@style/list_item_subtitle" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+                    <TextView android:id="@id/tvSize" style="@style/list_item_detail" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</com.balysv.materialripple.MaterialRippleLayout>

@@ -1,7 +1,7 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-    </style>
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--</style>-->
 
 
     <style name="button_blue">
@@ -85,4 +85,27 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+
+    <style name="ListViewStyle" parent="@android:style/TextAppearance">
+        <item name="android:background">@color/color_transparent</item>
+        <item name="android:divider">@drawable/line</item>
+        <item name="android:dividerHeight">1.0px</item>
+    </style>
+    <style name="QuizStartText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/color_title</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
+
 </resources>

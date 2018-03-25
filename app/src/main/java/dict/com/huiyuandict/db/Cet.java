@@ -21,7 +21,6 @@ public class Cet extends SQLiteAssetHelper {
     }
 
     public static String getStr(Context cOntext) {
-        Debug.waitForDebugger();
         String str;
         if (((Conf) AnyPref.get(Conf.class)).getBooks() == null) {
             str = DATABASE_NAME;

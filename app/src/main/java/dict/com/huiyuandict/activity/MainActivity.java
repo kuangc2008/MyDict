@@ -1,4 +1,4 @@
-package dict.com.huiyuandict;
+package dict.com.huiyuandict.activity;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -19,6 +19,8 @@ import net.nashlegend.anypref.AnyPref;
 import java.util.ArrayList;
 import java.util.List;
 
+import dict.com.huiyuandict.BaseActivity;
+import dict.com.huiyuandict.R;
 import dict.com.huiyuandict.data.Book;
 import dict.com.huiyuandict.data.Conf;
 import dict.com.huiyuandict.fragments.AboutFragment;
@@ -100,7 +102,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-//                intent.setClass(this, BooksActivity.class);
+                intent.setClass(MainActivity.this, BooksActivity.class);
                 startActivity(intent);
             }
         });
