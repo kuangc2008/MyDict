@@ -230,7 +230,7 @@ public class DetailActivity extends BaseActivity implements OnClickListener {
     public void onClick(View view) {
         if (view.getId() != R.id.tv_biaoji && view.getId() == R.id.iv_edit) {
             Intent intent = new Intent();
-//            intent.setClass(this.mContext, EditActivity.class);
+            intent.setClass(this.mContext, EditActivity.class);
             intent.putExtra("data", this.wordDetail);
             intent.putExtra("id", String.valueOf(((Data) this.datas.get(this.vpDetail.getCurrentItem())).getId()));
             startActivity(intent);
