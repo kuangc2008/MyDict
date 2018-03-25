@@ -18,6 +18,7 @@ import java.util.Locale;
 
 import dict.com.huiyuandict.App;
 import dict.com.huiyuandict.R;
+import dict.com.huiyuandict.activity.DetailActivity;
 import dict.com.huiyuandict.data.Data;
 import dict.com.huiyuandict.db.Cet;
 import rx.schedulers.Schedulers;
@@ -80,7 +81,7 @@ public class UnitItemContentViewBinder extends ViewBinder<UnitItemContent, UnitI
     static /* synthetic */ void lambda$null$1(UnitItemContentViewBinder this_, ViewHolder viewHolder, ArrayList list) {
         Intent intent = new Intent();
         Context context = viewHolder.itemView.getContext();
-//        intent.setClass(context, DetailActivity.class);
+        intent.setClass(context, DetailActivity.class);
         intent.putExtra("position", this_.position);
         intent.putExtra("datas", list);
         intent.putExtra("isStudy", true);
