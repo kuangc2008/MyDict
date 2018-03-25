@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_gray"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="5.0dip">
+
+        <EditText
+            android:id="@id/etSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:background="@color/color_white"
+            android:inputType="textEmailAddress"
+            android:lines="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/ic_search" />
+    </FrameLayout>
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@id/stlTab"
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip"
+        app:stl_clickable="true"
+        app:stl_defaultTabBackground="?selectableItemBackground"
+        app:stl_defaultTabTextAllCaps="true"
+        app:stl_defaultTabTextColor="#fc878686"
+        app:stl_defaultTabTextHorizontalPadding="16.0dip"
+        app:stl_defaultTabTextMinWidth="0.0dip"
+        app:stl_defaultTabTextSize="12.0sp"
+        app:stl_distributeEvenly="true"
+        app:stl_dividerColor="#4d000000"
+        app:stl_dividerThickness="0.0dip"
+        app:stl_drawDecorationAfterTab="false"
+        app:stl_indicatorAlwaysInCenter="false"
+        app:stl_indicatorColor="@color/colorPrimary"
+        app:stl_indicatorCornerRadius="1.0dip"
+        app:stl_indicatorGravity="bottom"
+        app:stl_indicatorInFront="false"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="4.0dip"
+        app:stl_indicatorWidth="auto"
+        app:stl_indicatorWithoutPadding="false"
+        app:stl_overlineColor="#4d000000"
+        app:stl_overlineThickness="0.0dip"
+        app:stl_titleOffset="24.0dip"
+        app:stl_underlineColor="#4d000000"
+        app:stl_underlineThickness="1.0dip" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

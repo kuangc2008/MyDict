@@ -69,7 +69,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
         this.fragments = new ArrayList();
         this.fragments.add(new StudyFragment());
-//        this.fragments.add(new YilanFragment());
+        this.fragments.add(new YilanFragment());
         this.fragments.add(new ProjectFragment());
         this.fragments.add(new AboutFragment());
         this.fragmentManager = getFragmentManager();
