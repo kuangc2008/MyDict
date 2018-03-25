@@ -17,6 +17,7 @@ import net.nashlegend.anypref.AnyPref;
 
 import dict.com.huiyuandict.R;
 import dict.com.huiyuandict.activity.StudyUnitActivity;
+import dict.com.huiyuandict.activity.TestUnitActivity;
 import dict.com.huiyuandict.data.Book;
 import dict.com.huiyuandict.data.Conf;
 import dict.com.huiyuandict.db.Cet;
@@ -107,7 +108,7 @@ public class StudyFragment extends BaseFragment implements OnClickListener {
         Intent intent;
         if (view.getId() == R.id.btnTest) {
             intent = new Intent();
-//            intent.setClass(this.mContext, TestUnitActivity.class);
+            intent.setClass(this.mContext, TestUnitActivity.class);
             intent.putExtra("type", "test");
             startActivity(intent);
         } else if (view.getId() == R.id.btnLearn) {
@@ -116,7 +117,7 @@ public class StudyFragment extends BaseFragment implements OnClickListener {
             startActivity(intent);
         } else if (view.getId() == R.id.todayPanel) {
             intent = new Intent();
-//            intent.setClass(this.mContext, TestUnitActivity.class);
+            intent.setClass(this.mContext, TestUnitActivity.class);
             intent.putExtra("type", "history");
             startActivity(intent);
         }

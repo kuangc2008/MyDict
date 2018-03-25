@@ -22,6 +22,7 @@
         <activity android:name=".activity.StudyUnitActivity" />
         <activity android:name=".activity.DetailActivity" />
         <activity android:name=".activity.EditActivity" />
+        <activity android:name=".activity.TestUnitActivity" />
     </application>
 
 </manifest>
