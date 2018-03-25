@@ -17,6 +17,7 @@ import java.util.Locale;
 
 import dict.com.huiyuandict.App;
 import dict.com.huiyuandict.R;
+import dict.com.huiyuandict.activity.ResultActivity;
 import dict.com.huiyuandict.activity.TestActivity;
 import dict.com.huiyuandict.db.Cet;
 import rx.schedulers.Schedulers;
@@ -80,7 +81,7 @@ public class TestUnitItemContentViewBinder extends ViewBinder<UnitItemContent, T
             return;
         }
         intent = new Intent();
-//        intent.setClass(v.getContext(), ResultActivity.class);
+        intent.setClass(v.getContext(), ResultActivity.class);
         intent.putExtra("unit", i + "");
         v.getContext().startActivity(intent);
     }
