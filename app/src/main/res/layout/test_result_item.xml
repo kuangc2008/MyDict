@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ripple"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/topLayout" android:layout_width="fill_parent" android:layout_height="58.0dip" android:baselineAligned="false"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/topSubLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center" android:id="@id/tvNo" android:layout_width="40.0dip" android:layout_height="fill_parent" android:text="01" style="@style/list_item_subtitle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/Layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_weight="1.0">
+                <TextView android:gravity="center|left" android:id="@id/tvWordEn" android:text="kotaro" style="@style/list_item_title" />
+                <TextView android:gravity="center|left" android:id="@id/tvWordJp" android:layout_marginTop="5.0dip" android:text="小太郎" style="@style/list_item_detail" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:id="@id/Layout21" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/imgResult" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@drawable/list_right2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.balysv.materialripple.MaterialRippleLayout>
